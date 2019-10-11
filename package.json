@@ -1,0 +1,43 @@
+{
+  "name": "merkle-snowflake",
+  "version": "1.2.1",
+  "license": "MIT",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "typings": "index.d.ts",
+  "homepage": "https://github.com/alitajs/merkle-snowflake",
+  "scripts": {
+    "build": "tsc -p . && prettier *.{ts,js} --write --loglevel=error",
+    "lint": "tslint --project . -c tslint.yml"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "crypto-js": "^3.1.9-1",
+    "husky": "^2.2.0",
+    "prettier": "^1.18.2",
+    "tslint": "^5.0.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.5.0"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "index.ts"
+  ],
+  "author": {
+    "name": "Hele",
+    "email": "work@imhele.com"
+  },
+  "bugs": {
+    "url": "https://github.com/alitajs/merkle-snowflake/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/merkle-snowflake"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
