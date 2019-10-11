@@ -9,21 +9,8 @@
 
 # production
 /coverage
-app/**/*.js
-test/**/*.js
-config/**/*.js
-app/**/*.map
-test/**/*.map
-config/**/*.map
+*.js
+*.d.js
 
 # misc
 .DS_Store
-
-# editor
-# /.vscode
-
-# local
-run/
-logs/
-*.log
-*.local.ts
